@@ -20,7 +20,7 @@ dilated = cv.dilate(canny, (3, 3), iterations = 1)
 cv.imshow('Dilated', dilated)
 
 # eroding
-erodeed = cv.erode(dialted, (3, 3), iterations = 1)
+eroded = cv.erode(dilated, (3, 3), iterations = 1)
 cv.imshow('Eroded', eroded)
 
 # resize

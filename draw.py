@@ -1,12 +1,15 @@
 import cv2 as cv
 import numpy as np
 
+# creates a blank canvas of height 500 width 500 and 3 channels aka 3 x 3 matrix
+# type is unsigned 8 bit integer
 blank = np.zeros((500, 500, 3), dtype = 'uint8')
 cv.imshow('Blank', blank)
+
 img = cv.imread('image.jpeg')
 cv.imshow('Image', img)
 
-# 1. point the image a certain colour
+# 1.paint the entire canvas black
 blank[:] = 0, 255, 0
 cv.imshow('Green', blank)
 
